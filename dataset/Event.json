@@ -1,0 +1,84 @@
+{
+	"name": "Event",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "crm_events.csv",
+				"container": "bankingcsv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "date_received",
+				"type": "String"
+			},
+			{
+				"name": "product",
+				"type": "String"
+			},
+			{
+				"name": "sub_product",
+				"type": "String"
+			},
+			{
+				"name": "issue",
+				"type": "String"
+			},
+			{
+				"name": "sub_issue",
+				"type": "String"
+			},
+			{
+				"name": "tags",
+				"type": "String"
+			},
+			{
+				"name": "consumer_consent_provided",
+				"type": "String"
+			},
+			{
+				"name": "submitted_via",
+				"type": "String"
+			},
+			{
+				"name": "date_sent_to_company",
+				"type": "String"
+			},
+			{
+				"name": "company_response_to_consumer",
+				"type": "String"
+			},
+			{
+				"name": "timely_response",
+				"type": "String"
+			},
+			{
+				"name": "consumer_disputed",
+				"type": "String"
+			},
+			{
+				"name": "complaint_id",
+				"type": "String"
+			},
+			{
+				"name": "client_id",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

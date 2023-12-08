@@ -1,0 +1,80 @@
+{
+	"name": "call_center_logs",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "crm_call_center_logs.csv",
+				"container": "bankingcsv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "date_received",
+				"type": "String"
+			},
+			{
+				"name": "complaint_id",
+				"type": "String"
+			},
+			{
+				"name": "rand_client",
+				"type": "String"
+			},
+			{
+				"name": "phonefinal",
+				"type": "String"
+			},
+			{
+				"name": "vru_line",
+				"type": "String"
+			},
+			{
+				"name": "call_id",
+				"type": "String"
+			},
+			{
+				"name": "priority",
+				"type": "String"
+			},
+			{
+				"name": "type",
+				"type": "String"
+			},
+			{
+				"name": "outcome",
+				"type": "String"
+			},
+			{
+				"name": "server",
+				"type": "String"
+			},
+			{
+				"name": "ser_start",
+				"type": "String"
+			},
+			{
+				"name": "ser_exit",
+				"type": "String"
+			},
+			{
+				"name": "ser_time",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

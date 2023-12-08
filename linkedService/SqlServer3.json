@@ -1,0 +1,17 @@
+{
+	"name": "SqlServer3",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=DESKTOP-U9C05RC;initial catalog=Retail_Banking",
+			"userName": "n.emakhlouf@gmail.com",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIyMTA3ZmY2My01NjVkLTQxMDgtYmE2MC0zMjJjY2YzZTgzZDgiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime3",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "adf-retails-csv",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8c8ffb91-c9ff-4868-bc83-57d5869c48f8",
+		"tenantId": "03c5845a-08d0-4ea9-9e05-f992b48f1744"
+	}
+}

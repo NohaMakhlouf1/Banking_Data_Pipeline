@@ -1,0 +1,102 @@
+{
+	"name": "raw_client",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase2",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "raw_DB"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "client_id",
+				"type": "varchar"
+			},
+			{
+				"name": "sex",
+				"type": "varchar"
+			},
+			{
+				"name": "fulldate",
+				"type": "varchar"
+			},
+			{
+				"name": "day",
+				"type": "varchar"
+			},
+			{
+				"name": "month",
+				"type": "varchar"
+			},
+			{
+				"name": "year",
+				"type": "varchar"
+			},
+			{
+				"name": "age",
+				"type": "varchar"
+			},
+			{
+				"name": "social",
+				"type": "varchar"
+			},
+			{
+				"name": "first",
+				"type": "varchar"
+			},
+			{
+				"name": "middle",
+				"type": "varchar"
+			},
+			{
+				"name": "last",
+				"type": "varchar"
+			},
+			{
+				"name": "phone",
+				"type": "varchar"
+			},
+			{
+				"name": "email",
+				"type": "varchar"
+			},
+			{
+				"name": "address_1",
+				"type": "varchar"
+			},
+			{
+				"name": "address_2",
+				"type": "varchar"
+			},
+			{
+				"name": "city",
+				"type": "varchar"
+			},
+			{
+				"name": "state",
+				"type": "varchar"
+			},
+			{
+				"name": "zipcode",
+				"type": "varchar"
+			},
+			{
+				"name": "district_id",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "date",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Client"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

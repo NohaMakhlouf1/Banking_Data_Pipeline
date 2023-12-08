@@ -1,0 +1,156 @@
+{
+	"name": "loanDetails",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "luxuryloanportfolio.csv",
+				"container": "bankingcsv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "loan_id",
+				"type": "String"
+			},
+			{
+				"name": "funded_amount",
+				"type": "String"
+			},
+			{
+				"name": "funded_date",
+				"type": "String"
+			},
+			{
+				"name": "duration_years",
+				"type": "String"
+			},
+			{
+				"name": "duration_months",
+				"type": "String"
+			},
+			{
+				"name": "10_yr_treasury_index_date_funded",
+				"type": "String"
+			},
+			{
+				"name": "interest_rate_percent",
+				"type": "String"
+			},
+			{
+				"name": "interest_rate",
+				"type": "String"
+			},
+			{
+				"name": "payments",
+				"type": "String"
+			},
+			{
+				"name": "total_past_payments",
+				"type": "String"
+			},
+			{
+				"name": "loan_balance",
+				"type": "String"
+			},
+			{
+				"name": "property_value",
+				"type": "String"
+			},
+			{
+				"name": "purpose",
+				"type": "String"
+			},
+			{
+				"name": "firstname",
+				"type": "String"
+			},
+			{
+				"name": "middlename",
+				"type": "String"
+			},
+			{
+				"name": "lastname",
+				"type": "String"
+			},
+			{
+				"name": "social",
+				"type": "String"
+			},
+			{
+				"name": "phone",
+				"type": "String"
+			},
+			{
+				"name": "title",
+				"type": "String"
+			},
+			{
+				"name": "employment_length",
+				"type": "String"
+			},
+			{
+				"name": "building_class_category",
+				"type": "String"
+			},
+			{
+				"name": "tax_class_at_present",
+				"type": "String"
+			},
+			{
+				"name": "building_class_at_present",
+				"type": "String"
+			},
+			{
+				"name": "address_1",
+				"type": "String"
+			},
+			{
+				"name": "address_2",
+				"type": "String"
+			},
+			{
+				"name": "zip_code",
+				"type": "String"
+			},
+			{
+				"name": "city",
+				"type": "String"
+			},
+			{
+				"name": "state",
+				"type": "String"
+			},
+			{
+				"name": "total_units",
+				"type": "String"
+			},
+			{
+				"name": "land_square_feet",
+				"type": "String"
+			},
+			{
+				"name": "gross_square_feet",
+				"type": "String"
+			},
+			{
+				"name": "tax_class_at_time_of_sale",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

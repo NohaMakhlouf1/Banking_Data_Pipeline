@@ -1,0 +1,81 @@
+{
+	"name": "eventsDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Azure SQL DB"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "date_received",
+				"type": "date"
+			},
+			{
+				"name": "product",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sub_product",
+				"type": "nvarchar"
+			},
+			{
+				"name": "issue",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sub_issue",
+				"type": "nvarchar"
+			},
+			{
+				"name": "consumer_complaint_narrative",
+				"type": "nvarchar"
+			},
+			{
+				"name": "tags",
+				"type": "nvarchar"
+			},
+			{
+				"name": "consumer_consent_provided",
+				"type": "nvarchar"
+			},
+			{
+				"name": "submitted_via",
+				"type": "nvarchar"
+			},
+			{
+				"name": "date_sent_to_company",
+				"type": "date"
+			},
+			{
+				"name": "company_response_to_consumer",
+				"type": "nvarchar"
+			},
+			{
+				"name": "timely_response",
+				"type": "bit"
+			},
+			{
+				"name": "consumer_disputed",
+				"type": "bit"
+			},
+			{
+				"name": "complaint_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "client_id",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Events"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

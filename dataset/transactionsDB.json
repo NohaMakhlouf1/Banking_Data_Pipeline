@@ -1,0 +1,89 @@
+{
+	"name": "transactionsDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Azure SQL DB"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "column_a",
+				"type": "varchar"
+			},
+			{
+				"name": "trans_id",
+				"type": "varchar"
+			},
+			{
+				"name": "account_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "type",
+				"type": "varchar"
+			},
+			{
+				"name": "operation",
+				"type": "varchar"
+			},
+			{
+				"name": "amount",
+				"type": "varchar"
+			},
+			{
+				"name": "balance",
+				"type": "varchar"
+			},
+			{
+				"name": "k_symbol",
+				"type": "varchar"
+			},
+			{
+				"name": "bank",
+				"type": "varchar"
+			},
+			{
+				"name": "account",
+				"type": "varchar"
+			},
+			{
+				"name": "year",
+				"type": "varchar"
+			},
+			{
+				"name": "month",
+				"type": "varchar"
+			},
+			{
+				"name": "day",
+				"type": "varchar"
+			},
+			{
+				"name": "fulldate",
+				"type": "varchar"
+			},
+			{
+				"name": "fulltime",
+				"type": "varchar"
+			},
+			{
+				"name": "fulldatewithtime",
+				"type": "varchar"
+			},
+			{
+				"name": "date",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Transactions"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

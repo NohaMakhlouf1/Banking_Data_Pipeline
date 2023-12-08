@@ -1,0 +1,43 @@
+{
+	"name": "raw_reviews",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase2",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "raw_DB"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "date",
+				"type": "date"
+			},
+			{
+				"name": "stars",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "reviews",
+				"type": "nvarchar"
+			},
+			{
+				"name": "product",
+				"type": "nvarchar"
+			},
+			{
+				"name": "district_id",
+				"type": "tinyint",
+				"precision": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "reviews_db"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

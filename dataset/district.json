@@ -1,0 +1,46 @@
+{
+	"name": "district",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Azure SQL DB"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "district_id",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "city",
+				"type": "nvarchar"
+			},
+			{
+				"name": "state_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "state_abbrev",
+				"type": "nvarchar"
+			},
+			{
+				"name": "region",
+				"type": "nvarchar"
+			},
+			{
+				"name": "division",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "District"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

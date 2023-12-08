@@ -1,0 +1,81 @@
+{
+	"name": "loanDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Azure SQL DB"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "loan_id",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "account_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "amount",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "duration",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "payments",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "year",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "month",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "day",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "fulldate",
+				"type": "date"
+			},
+			{
+				"name": "location",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "purpose",
+				"type": "nvarchar"
+			},
+			{
+				"name": "date",
+				"type": "date"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Loan"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

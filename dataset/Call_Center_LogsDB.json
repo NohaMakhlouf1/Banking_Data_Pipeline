@@ -1,0 +1,73 @@
+{
+	"name": "Call_Center_LogsDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Azure SQL DB"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "date_received",
+				"type": "varchar"
+			},
+			{
+				"name": "complaint_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "rand_client",
+				"type": "varchar"
+			},
+			{
+				"name": "phonefinal",
+				"type": "varchar"
+			},
+			{
+				"name": "vru_line",
+				"type": "varchar"
+			},
+			{
+				"name": "call_id",
+				"type": "varchar"
+			},
+			{
+				"name": "priority",
+				"type": "varchar"
+			},
+			{
+				"name": "type",
+				"type": "varchar"
+			},
+			{
+				"name": "outcome",
+				"type": "varchar"
+			},
+			{
+				"name": "server",
+				"type": "varchar"
+			},
+			{
+				"name": "ser_start",
+				"type": "varchar"
+			},
+			{
+				"name": "ser_exit",
+				"type": "varchar"
+			},
+			{
+				"name": "ser_time",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Call_Center_Log"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,166 @@
+{
+	"name": "loanDetailsDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Azure SQL DB"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "loan_id",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "funded_amount",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "funded_date",
+				"type": "date"
+			},
+			{
+				"name": "duration_years",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "duration_months",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "_10_yr_treasury_index_date_funded",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "interest_rate_percent",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "interest_rate",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "payments",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "total_past_payments",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "loan_balance",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "property_value",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "purpose",
+				"type": "nvarchar"
+			},
+			{
+				"name": "firstname",
+				"type": "nvarchar"
+			},
+			{
+				"name": "middlename",
+				"type": "nvarchar"
+			},
+			{
+				"name": "lastname",
+				"type": "nvarchar"
+			},
+			{
+				"name": "social",
+				"type": "nvarchar"
+			},
+			{
+				"name": "phone",
+				"type": "nvarchar"
+			},
+			{
+				"name": "title",
+				"type": "nvarchar"
+			},
+			{
+				"name": "employment_length",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "building_class_category",
+				"type": "nvarchar"
+			},
+			{
+				"name": "tax_class_at_present",
+				"type": "nvarchar"
+			},
+			{
+				"name": "building_class_at_present",
+				"type": "nvarchar"
+			},
+			{
+				"name": "address_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "address_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "zip_code",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "city",
+				"type": "nvarchar"
+			},
+			{
+				"name": "state",
+				"type": "nvarchar"
+			},
+			{
+				"name": "total_units",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "land_square_feet",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "gross_square_feet",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "tax_class_at_time_of_sale",
+				"type": "tinyint",
+				"precision": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "LoanDetails"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
