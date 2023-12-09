@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-retails-csv"
+		},
+		"Account_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_connectionString": {
+			"value": ""
+		},
+		"SqlServer1_connectionString": {
+			"value": "Integrated Security=True;Data Source=DESKTOP-U9C05RC;Initial Catalog=Retail_Banking"
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"SqlServer2_connectionString": {
+			"value": "Integrated Security=True;Data Source=DESKTOP-U9C05RC;Initial Catalog=Retail_Banking"
+		},
+		"SqlServer2_password": {
+			"value": ""
+		},
+		"SqlServer3_connectionString": {
+			"value": "Integrated Security=True;Data Source=DESKTOP-U9C05RC;Initial Catalog=Retail_Banking"
+		},
+		"SqlServer3_password": {
+			"value": ""
+		},
+		"SqlServer4_connectionString": {
+			"value": "Integrated Security=True;Data Source=DESKTOP-U9C05RC;Initial Catalog=Retail_Banking"
+		},
+		"SqlServer4_password": {
+			"value": ""
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "DESKTOP-U9C05RC/Noha"
+		},
+		"SqlServer2_properties_typeProperties_userName": {
+			"value": "n.emakhlouf@gmail.com"
+		},
+		"SqlServer3_properties_typeProperties_userName": {
+			"value": "n.emakhlouf@gmail.com"
+		},
+		"SqlServer4_properties_typeProperties_userName": {
+			"value": "n.emakhlouf@gmail.com"
+		},
+		"newfile_properties_typeProperties_scope": {
+			"value": "/subscriptions/4c2b8123-0f27-458a-b641-cc2180b6c8d9/resourceGroups/retails-data/providers/Microsoft.Storage/storageAccounts/bankingblob2112"
+		}
+	}
+}
